@@ -2,87 +2,138 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>이력서</title>
+  <title>OOO 이력서(샘플)</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #fff;
       scroll-behavior: smooth;
     }
+    .container {
+      display: flex;
+    }
     .sidebar {
+      width: 200px;
+      background-color: #f9f9f9;
+      border-right: 1px solid #ddd;
+      padding: 30px 20px;
+      height: 100vh;
       position: fixed;
       top: 0;
       left: 0;
-      width: 180px;
-      height: 100%;
-      background-color: #f8f8f8;
-      padding: 30px 20px;
-      border-right: 1px solid #ddd;
+      overflow-y: auto;
     }
     .sidebar a {
       display: block;
-      color: #333;
+      color: #222;
       text-decoration: none;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
       font-weight: normal;
     }
-    .sidebar a:hover {
+    .sidebar a:hover,
+    .sidebar a.active {
       color: teal;
-    }
-    .sidebar a:first-child {
       font-weight: bold;
-      color: teal;
     }
     .content {
-      margin-left: 200px;
-      padding: 30px;
+      margin-left: 220px;
+      padding: 40px;
+      width: 100%;
+      max-width: 1000px;
     }
-    section {
-      margin-bottom: 80px;
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+      margin-top: 60px;
+    }
+    img.profile {
+      float: right;
+      width: 100px;
+      border-radius: 8px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
-    <a href="#info">기본 정보</a>
-    <a href="#stack">기술 스택</a>
-    <a href="#career">경력</a>
-    <a href="#portfolio">포트폴리오</a>
-    <a href="#edu">교육</a>
-    <a href="#cert">수상 및 자격</a>
-  </div>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#info" class="active">기본 정보</a>
+      <a href="#stack">기술 스택</a>
+      <a href="#career">경력</a>
+      <a href="#portfolio">포트폴리오</a>
+      <a href="#edu">교육</a>
+      <a href="#cert">수상 및 자격</a>
+    </div>
 
-  <div class="content">
-    <section id="info">
-      <h2>기본 정보</h2>
-      <p>프론트엔드 개발자 OOO</p>
-    </section>
+    <div class="content">
+      <section id="info">
+        <h1>OOO 이력서(샘플)</h1>
+        <p>프론트엔드 개발자</p>
+        <p>이메일: syjung@donyang.ac.kr</p>
+        <p>노션 이력서 링크: <a href="#">Notion 이력서 링크</a></p>
+        <img src="profile.jpg" alt="프로필 사진" class="profile">
+      </section>
 
-    <section id="stack">
-      <h2>기술 스택</h2>
-      <p>React, TypeScript, Spring 등등...</p>
-    </section>
+      <section id="stack">
+        <h2>기술 스택</h2>
+        <ul>
+          <li><b>Front End:</b> Next.js, React, TypeScript, HTML5/CSS, React Query</li>
+          <li><b>Back End:</b> Spring, Java, REST API, 인증/결제 시스템, 실시간 서버 등</li>
+          <li><b>시스템/임베디드:</b> Linux, C, Raspberry Pi, Arduino, TCP/IP 프로그래밍, AWS</li>
+          <li><b>AR/VR:</b> Unity, C#</li>
+          <li><b>DB:</b> MySQL, Oracle, MongoDB</li>
+        </ul>
+      </section>
 
-    <section id="career">
-      <h2>경력</h2>
-      <p>졸업작품 프로젝트, 실시간 채팅 등...</p>
-    </section>
+      <section id="career">
+        <h2>경력</h2>
+        <ul>
+          <li><strong>졸업작품 프로젝트:</strong> 손 동작 인식을 통한 재활 솔루션 개발 (2025.03 ~ 2025.10)</li>
+          <li><strong>실시간 채팅 프로젝트:</strong> Raspberry Pi + pThread 기반 채팅 서버, TCP/IP Socket</li>
+        </ul>
+      </section>
 
-    <section id="portfolio">
-      <h2>포트폴리오</h2>
-      <p>GitHub 링크들...</p>
-    </section>
+      <section id="portfolio">
+        <h2>포트폴리오</h2>
+        <ul>
+          <li>졸업 작품: <a href="https://github.com/syjung64">GitHub</a></li>
+          <li>실시간 채팅 프로젝트: <a href="https://github.com/syjung64">GitHub</a></li>
+          <li>부동산 분석 프로젝트: <a href="https://github.com/syjung64">GitHub</a></li>
+        </ul>
+      </section>
 
-    <section id="edu">
-      <h2>교육</h2>
-      <p>동양미래대학교 컴소과 등등...</p>
-    </section>
+      <section id="edu">
+        <h2>교육</h2>
+        <ul>
+          <li>동양미래대학교 컴퓨터소프트웨어공학과 (2022.03~2026.2)</li>
+          <li>ㅇㅇㅇ고등학교 졸업 예정</li>
+        </ul>
+      </section>
 
-    <section id="cert">
-      <h2>수상 및 자격</h2>
-      <p>AWS, SQLD, 정보처리기사 등등...</p>
-    </section>
+      <section id="cert">
+        <h2>수상 및 자격</h2>
+        <ul>
+          <li>전공동아리 EL 활동 (Unity, Python)</li>
+          <li>EXPO 참가 (2024.11 COEX)</li>
+          <li>정보처리산업기사 (예정)</li>
+          <li>AWS practitioner (2024.11)</li>
+          <li>SQLD (2024.11)</li>
+        </ul>
+      </section>
+    </div>
   </div>
 
 </body>
