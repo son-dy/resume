@@ -1,26 +1,97 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Resume</title>
+  <meta charset="UTF-8">
+  <title>OOO 이력서(샘플)</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
-    h1 { color: #333; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #000;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .profile-img {
+      float: right;
+      width: 120px;
+      border-radius: 8px;
+    }
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p><strong>Email:</strong> your.email@example.com</p>
-  <h2>Education</h2>
-  <ul>
-    <li>University Name – Major (Year)</li>
-  </ul>
-  <h2>Experience</h2>
-  <ul>
-    <li>Company – Role (Year)</li>
-  </ul>
+
+  <h1>OOO 이력서(샘플)</h1>
+  <p>프론트엔드 개발자</p>
+  <p>이메일: <a href="mailto:syjung@donyang.ac.kr">syjung@donyang.ac.kr</a></p>
+  <p>노션 이력서 링크: <a href="#">Notion 이력서 링크</a></p>
+  <img src="profile.jpg" alt="프로필 사진" class="profile-img">
+
+  <div class="section">
+    <h2>기술 스택</h2>
+    <ul>
+      <li><strong>Front End</strong>: Next.js, React, TypeScript, HTML5/CSS, React Query</li>
+      <li><strong>Back End</strong>: Spring, Java, REST API, 결제/인증 시스템, 실시간 채팅 서버</li>
+      <li><strong>시스템/엔지니어링</strong>: Linux, C, Raspberry Pi, Arduino, TCP/IP 소켓프로그래밍, AWS</li>
+      <li><strong>AR/VR</strong>: Unity, C#</li>
+      <li><strong>DB</strong>: MySQL, Oracle, MongoDB</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>경력</h2>
+    <ul>
+      <li><strong>졸업작품 프로젝트</strong> - 손 동작 인식을 통한 재활 솔루션 개발 (프론트엔드 담당, 2025.03 ~ 2025.10)</li>
+      <li><strong>실시간 채팅 프로젝트</strong> (C, pThread, Linux, Raspberry Pi): pThread 기반 서버, TCP/IP 소켓 통신</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>포트폴리오</h2>
+    <ul>
+      <li><strong>졸업 작품</strong>: <a href="https://github.com/syjung64">https://github.com/syjung64</a></li>
+      <li><strong>실시간 채팅 프로젝트</strong>: <a href="https://github.com/syjung64">https://github.com/syjung64</a></li>
+      <li><strong>Python 부동산 분석</strong>: <a href="https://github.com/syjung64">https://github.com/syjung64</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>교육</h2>
+    <ul>
+      <li>동양미래대학교 – 컴퓨터소프트웨어공학과 (2022.03~2026.2)</li>
+      <li>ㅇㅇㅇ고등학교 – (2022.03~2026.2)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>수상 및 자격</h2>
+    <ul>
+      <li>전공동아리 EL 활동 - 손동작 게임(Unity/C#), DashBoard 개발(Streamlit)</li>
+      <li>EXPO 출품 (2024.11 COEX)</li>
+      <li>정보처리산업기사 (2024.11)</li>
+      <li>AWS practitioner (2024.11)</li>
+      <li>SQLD (2024.11)</li>
+    </ul>
+  </div>
+
 </body>
 </html>
-
